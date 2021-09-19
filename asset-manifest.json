@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/voting-dapp/static/css/main.a617e044.chunk.css",
+    "main.js": "/voting-dapp/static/js/main.c9388ddd.chunk.js",
+    "main.js.map": "/voting-dapp/static/js/main.c9388ddd.chunk.js.map",
+    "runtime-main.js": "/voting-dapp/static/js/runtime-main.2641f3a1.js",
+    "runtime-main.js.map": "/voting-dapp/static/js/runtime-main.2641f3a1.js.map",
+    "static/js/2.09a27738.chunk.js": "/voting-dapp/static/js/2.09a27738.chunk.js",
+    "static/js/2.09a27738.chunk.js.map": "/voting-dapp/static/js/2.09a27738.chunk.js.map",
+    "static/js/3.65741256.chunk.js": "/voting-dapp/static/js/3.65741256.chunk.js",
+    "static/js/3.65741256.chunk.js.map": "/voting-dapp/static/js/3.65741256.chunk.js.map",
+    "index.html": "/voting-dapp/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/voting-dapp/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.09a27738.chunk.js.LICENSE.txt": "/voting-dapp/static/js/2.09a27738.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2641f3a1.js",
+    "static/js/2.09a27738.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.c9388ddd.chunk.js"
+  ]
+}
