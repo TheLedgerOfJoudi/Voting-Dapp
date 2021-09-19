@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
+import Web3 from 'web3';
+import { ADDRESS, ABI } from './config';
+import Form from './components/Form';
+import VoteCount from './components/VoteCount';
+class App extends React.Component {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  constructor() {
+    super()
+    this.state = {
+      candidatesCount: 0
+    }
+  }
+
+  componentDidMount() {
+    this.load()
+  }
+
+  async load() {
+    const web3 = new Web3(Web3.givenProvider);
+    const vote = new web3.eth.Contract(ABI, ADDRESS);
+    let count = 0
+    await vote.methods.candidatesCount().call().then((result) => { count = result })
+    this.setState({ candidatesCount: count })
+  }
+
+  render() {
+    return (
+      <div>
+        candidatesCount : {this.state.candidatesCount}
+        <Form />
+        <VoteCount />
+      </div>
+    );
+  }
 }
 
 export default App;
